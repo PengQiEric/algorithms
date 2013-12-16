@@ -13,7 +13,7 @@ import java.util.logging.Logger;
  */
 public class ModelUsingBlocking 
 {
-	public static void main(String[] args)
+	public static void main(String[] args )
 	{
 		BlockingQueue<Integer> sharedQueue = new LinkedBlockingQueue<Integer>();
 		Thread consumer1 = new Thread(new Consumer(sharedQueue),"consumer1");		
